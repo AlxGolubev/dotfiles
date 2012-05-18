@@ -6,12 +6,6 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
-#alias -g G='| grep'
-#alias -g M='| less'
-#alias -g L='| wc -l'
-#alias -g ONE="| awk '{ print \$1}'"
-
-
 
 # Rails
 alias rg='rails generate'
@@ -31,15 +25,12 @@ alias be="bundle exec"
 alias bake="bundle exec rake"
 
 # Tests and Specs
-alias t="ruby -I test"
 alias s="bundle exec rspec"
 alias cuc="bundle exec cucumber"
 
 # git
 alias g="git"
 alias gci="git pull --rebase && rake && git push"
- 
-# Git
 alias ga='git add'
 alias gau='git add -u'
 alias gai='git add --interactive'
@@ -50,6 +41,7 @@ alias gbr='git branch'
 alias gcb='git checkout -b'
 alias gca='git commit -a -v'
 alias gci='git commit -v'
+alias gcam='git commit -am'
 alias gco='git checkout'
 alias gdf='git diff'
 alias gfh='git fetch'
