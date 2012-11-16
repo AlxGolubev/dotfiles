@@ -30,6 +30,7 @@ alias cuc="bundle exec cucumber"
 
 # git
 alias g="git"
+alias gs='git status'
 alias gci="git pull --rebase && rake && git push"
 alias ga='git add'
 alias gau='git add -u'
@@ -42,6 +43,7 @@ alias gcb='git checkout -b'
 alias gca='git commit -a -v'
 alias gci='git commit -v'
 alias gcam='git commit -am'
+alias gcm='git commit -m'
 alias gco='git checkout'
 alias gdf='git diff'
 alias gfh='git fetch'

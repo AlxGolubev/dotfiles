@@ -1,5 +1,5 @@
 source ~/.bash/aliases
-source ~/.bash/completions
+#source ~/.bash/completions
 source ~/.bash/paths
 source ~/.bash/config
 
@@ -12,9 +12,9 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-#if [ -f /etc/bash_completion ]; then
-#    . /etc/bash_completion
-#fi
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
 
 # enable color support of ls and also add handy aliases
 if [ "$TERM" != "dumb" ]; then
@@ -28,3 +28,6 @@ alias h="history|grep "
 alias f="find . |grep "
 alias p="ps aux |grep "
 alias o="gnome-open "
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$HOME/local/bin:$PATH
