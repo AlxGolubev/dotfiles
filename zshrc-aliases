@@ -9,26 +9,17 @@ alias lh='ls -Alh'
 
 # Rails
 alias rg='rails generate'
+alias rsp='rails s puma'
 alias rc='rails console'
 alias plog='touch log/production.log && tail -f log/production.log'
 alias dlog='touch log/development.log && tail -f log/development.log'
 alias tlog='touch log/test.log && tail -f log/test.log'
-alias rs="rails s"
-alias rsp="rails s puma"
-alias fr="foreman start"
-
-
 
 # Rails
 alias migrate="bundle exec rake db:migrate db:test:prepare"
 alias remigrate="bundle exec rake db:migrate db:migrate:redo db:schema:dump db:test:prepare"
 alias remongrate="bundle exec rake mongoid:migrate mongoid:migrate:redo"
-alias rs="rails s"
-alias rsp="rails s puma"
-alias fr="foreman start"
-	
 
- 
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
